@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Kuisioner Gaul ✨</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+      color: #333;
+    }
+    .container {
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #fff;
+      text-shadow: 1px 1px 2px #000;
+      margin-bottom: 10px;
+    }
+    p.intro {
+      text-align: center;
+      font-size: 1rem;
+      margin-bottom: 30px;
+      color: #fff;
+      text-shadow: 1px 1px 2px #000;
+    }
+    form {
+      background: rgba(255,255,255,0.95);
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 15px;
+      margin-bottom: 5px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 0.95rem;
+      margin-bottom: 10px;
+    }
+    select option {
+      display: block;
+      margin: 5px 0;
+    }
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 12px;
+      background-color: #ff5e99;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #e73370;
+    }
+    p.outro {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 0.95rem;
+      color: #fff;
+      text-shadow: 1px 1px 2px #000;
+    }
+    @media (max-width: 768px) {
+      .container {
+        margin: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Lu udah cakep, sekarang tinggal jadi member!</h1>
+    <p class="intro">Santai aja, nggak bakal bikin otak ngebul 🤯<br>
+    Jawab sejujur-jujurnya, se-gabut-gabutnya juga nggak apa-apa kok.<br>
+    Let’s go, bestieee! 🚀✨</p>
+
+    <form id="kuisionerForm">
+      <label>1. Siapa nama lengkap kamu, beb?</label>
+      <input type="text" name="nama_lengkap" required>
+
+      <label>2. Nama panggilan yang paling kamu suka?</label>
+      <input type="text" name="nama_panggilan" required>
+
+      <label>3. Kapan kamu lahir ke dunia ini?</label>
+      <input type="text" name="tanggal_lahir" placeholder="Tanggal saja, tahun opsional">
+
+      <label>4. Asal kamu dari kota mana nih?</label>
+      <input type="text" name="asal_kota">
+
+      <label>5. No WA kamu yang aktif</label>
+      <input type="text" name="no_wa">
+
+      <label>6. IG kamu apa?</label>
+      <input type="text" name="instagram">
+
+      <label>7. Style kamu tuh biasanya kayak gimana?</label>
+      <div>
+        <input type="radio" name="style" value="Kaos, celana, gas"> Kaos, celana, gas<br>
+        <input type="radio" name="style" value="Streetstyle ala hypebeast/cewek mamba"> Streetstyle ala hypebeast/cewek mamba<br>
+        <input type="radio" name="style" value="Vintage retro chill"> Vintage retro chill<br>
+        <input type="radio" name="style" value="Chic & classy"> Chic & classy<br>
+        <input type="radio" name="style" value="Gaya gue = mood gue"> Gaya gue = mood gue<br>
+        <input type="radio" name="style" value="Gue belum nemu style, bantuin dong 😭"> Gue belum nemu style, bantuin dong 😭<br>
+      </div>
+
+      <label>8. Berapa sih budget outfit yang kamu anggap “masih wajar”?</label>
+      <div>
+        <input type="radio" name="budget" value="Di bawah 50k"> Di bawah 50k<br>
+        <input type="radio" name="budget" value="50k – 100k"> 50k – 100k<br>
+        <input type="radio" name="budget" value="100k – 200k"> 100k – 200k<br>
+        <input type="radio" name="budget" value="200k – 300k"> 200k – 300k<br>
+        <input type="radio" name="budget" value="Lebih dari 300k"> Lebih dari 300k<br>
+      </div>
+
+      <label>9. Isi lemari kamu tuh didominasi sama...</label>
+      <div>
+        <input type="radio" name="isi_lemari" value="Hoodie & celana santai"> Hoodie & celana santai<br>
+        <input type="radio" name="isi_lemari" value="Outfit buat nongkrong"> Outfit buat nongkrong<br>
+        <input type="radio" name="isi_lemari" value="Outfit buat healing"> Outfit buat healing<br>
+        <input type="radio" name="isi_lemari" value="Outfit buat konten"> Outfit buat konten<br>
+        <input type="radio" name="isi_lemari" value="Semuanya campur, chaos tapi aesthetic 😅"> Semuanya campur, chaos tapi aesthetic 😅<br>
+      </div>
+
+      <label>10. Sebulan belanja baju berapa kali?</label>
+      <div>
+        <input type="radio" name="frekuensi_belanja" value="Sekali doang, itu juga mikir dulu 7x"> Sekali doang, itu juga mikir dulu 7x<br>
+        <input type="radio" name="frekuensi_belanja" value="2–3 kali, kalo nemu yang lucu ya gas"> 2–3 kali, kalo nemu yang lucu ya gas<br>
+        <input type="radio" name="frekuensi_belanja" value="Seminggu sekali kayak skincare-an"> Seminggu sekali kayak skincare-an<br>
+        <input type="radio" name="frekuensi_belanja" value="Lebih dari itu… dompet? Gatau tuh siapa 😅"> Lebih dari itu… dompet? Gatau tuh siapa 😅<br>
+        <input type="radio" name="frekuensi_belanja" value="Jarang belanja, tapi sekalinya beli langsung kalap"> Jarang belanja, tapi sekalinya beli langsung kalap<br>
+      </div>
+
+      <label>11. Kenapa pengen join jadi member?</label>
+      <div>
+        <input type="radio" name="alasan_join" value="Mau dapet diskon & info kece duluan"> Mau dapet diskon & info kece duluan<br>
+        <input type="radio" name="alasan_join" value="Suka ikut event yang vibes-nya dapet"> Suka ikut event yang vibes-nya dapet<br>
+        <input type="radio" name="alasan_join" value="Nyari circle yang satu frekuensi"> Nyari circle yang satu frekuensi<br>
+        <input type="radio" name="alasan_join" value="Fashion tuh passion"> Fashion tuh passion<br>
+        <input type="radio" name="alasan_join" value="Iseng doang, tapi kok nagih"> Iseng doang, tapi kok nagih<br>
+      </div>
+
+      <label>12. Event impian lo tuh yang vibes-nya kayak...</label>
+      <div>
+        <input type="radio" name="event_impian" value="Chill santai ala piknik"> Chill santai ala piknik<br>
+        <input type="radio" name="event_impian" value="Hype banget, rame, penuh musik"> Hype banget, rame, penuh musik<br>
+        <input type="radio" name="event_impian" value="Fashion show tapi sambil ngemil"> Fashion show tapi sambil ngemil<br>
+        <input type="radio" name="event_impian" value="Workshop bareng orang keren"> Workshop bareng orang keren<br>
+        <input type="radio" name="event_impian" value="Healing tipis-tipis sambil OOTD-an"> Healing tipis-tipis sambil OOTD-an<br>
+        <input type="radio" name="event_impian" value="Lainnya (spill dong idenya)"> Lainnya (spill dong idenya)<br>
+      </div>
+
+      <label>13. Kalau kamu bisa bikin event impian, bakal kayak gimana?</label>
+      <textarea name="ide_event" rows="4"></textarea>
+
+      <button type="submit">Kirim 🚀</button>
+    </form>
+
+    <p class="outro">Udah kelar? Goks, kamu emang niat! 🙌<br>
+    Sekarang tinggal tunggu hal-hal seru dari kita: mulai dari promo, event, sampe kesempatan jadi trendsetter bareng.<br>
+    Kita seneng banget kamu join — let’s grow & glow bareng yaaa ✨</p>
+  </div>
+
+  <script>
+    const scriptURL = "<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Kuisioner Gaul ✨</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+      color: #333;
+    }
+    .container {
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #fff;
+      text-shadow: 1px 1px 2px #000;
+      margin-bottom: 10px;
+    }
+    p.intro {
+      text-align: center;
+      font-size: 1rem;
+      margin-bottom: 30px;
+      color: #fff;
+      text-shadow: 1px 1px 2px #000;
+    }
+    form {
+      background: rgba(255,255,255,0.95);
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 15px;
+      margin-bottom: 5px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 0.95rem;
+      margin-bottom: 10px;
+    }
+    select option {
+      display: block;
+      margin: 5px 0;
+    }
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 12px;
+      background-color: #ff5e99;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #e73370;
+    }
+    p.outro {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 0.95rem;
+      color: #fff;
+      text-shadow: 1px 1px 2px #000;
+    }
+    @media (max-width: 768px) {
+      .container {
+        margin: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Lu udah cakep, sekarang tinggal jadi member!</h1>
+    <p class="intro">Santai aja, nggak bakal bikin otak ngebul 🤯<br>
+    Jawab sejujur-jujurnya, se-gabut-gabutnya juga nggak apa-apa kok.<br>
+    Let’s go, bestieee! 🚀✨</p>
+
+    <form id="kuisionerForm">
+      <label>1. Siapa nama lengkap kamu, beb?</label>
+      <input type="text" name="nama_lengkap" required>
+
+      <label>2. Nama panggilan yang paling kamu suka?</label>
+      <input type="text" name="nama_panggilan" required>
+
+      <label>3. Kapan kamu lahir ke dunia ini?</label>
+      <input type="text" name="tanggal_lahir" placeholder="Tanggal saja, tahun opsional">
+
+      <label>4. Asal kamu dari kota mana nih?</label>
+      <input type="text" name="asal_kota">
+
+      <label>5. No WA kamu yang aktif</label>
+      <input type="text" name="no_wa">
+
+      <label>6. IG kamu apa?</label>
+      <input type="text" name="instagram">
+
+      <label>7. Style kamu tuh biasanya kayak gimana?</label>
+      <div>
+        <input type="radio" name="style" value="Kaos, celana, gas"> Kaos, celana, gas<br>
+        <input type="radio" name="style" value="Streetstyle ala hypebeast/cewek mamba"> Streetstyle ala hypebeast/cewek mamba<br>
+        <input type="radio" name="style" value="Vintage retro chill"> Vintage retro chill<br>
+        <input type="radio" name="style" value="Chic & classy"> Chic & classy<br>
+        <input type="radio" name="style" value="Gaya gue = mood gue"> Gaya gue = mood gue<br>
+        <input type="radio" name="style" value="Gue belum nemu style, bantuin dong 😭"> Gue belum nemu style, bantuin dong 😭<br>
+      </div>
+
+      <label>8. Berapa sih budget outfit yang kamu anggap “masih wajar”?</label>
+      <div>
+        <input type="radio" name="budget" value="Di bawah 50k"> Di bawah 50k<br>
+        <input type="radio" name="budget" value="50k – 100k"> 50k – 100k<br>
+        <input type="radio" name="budget" value="100k – 200k"> 100k – 200k<br>
+        <input type="radio" name="budget" value="200k – 300k"> 200k – 300k<br>
+        <input type="radio" name="budget" value="Lebih dari 300k"> Lebih dari 300k<br>
+      </div>
+
+      <label>9. Isi lemari kamu tuh didominasi sama...</label>
+      <div>
+        <input type="radio" name="isi_lemari" value="Hoodie & celana santai"> Hoodie & celana santai<br>
+        <input type="radio" name="isi_lemari" value="Outfit buat nongkrong"> Outfit buat nongkrong<br>
+        <input type="radio" name="isi_lemari" value="Outfit buat healing"> Outfit buat healing<br>
+        <input type="radio" name="isi_lemari" value="Outfit buat konten"> Outfit buat konten<br>
+        <input type="radio" name="isi_lemari" value="Semuanya campur, chaos tapi aesthetic 😅"> Semuanya campur, chaos tapi aesthetic 😅<br>
+      </div>
+
+      <label>10. Sebulan belanja baju berapa kali?</label>
+      <div>
+        <input type="radio" name="frekuensi_belanja" value="Sekali doang, itu juga mikir dulu 7x"> Sekali doang, itu juga mikir dulu 7x<br>
+        <input type="radio" name="frekuensi_belanja" value="2–3 kali, kalo nemu yang lucu ya gas"> 2–3 kali, kalo nemu yang lucu ya gas<br>
+        <input type="radio" name="frekuensi_belanja" value="Seminggu sekali kayak skincare-an"> Seminggu sekali kayak skincare-an<br>
+        <input type="radio" name="frekuensi_belanja" value="Lebih dari itu… dompet? Gatau tuh siapa 😅"> Lebih dari itu… dompet? Gatau tuh siapa 😅<br>
+        <input type="radio" name="frekuensi_belanja" value="Jarang belanja, tapi sekalinya beli langsung kalap"> Jarang belanja, tapi sekalinya beli langsung kalap<br>
+      </div>
+
+      <label>11. Kenapa pengen join jadi member?</label>
+      <div>
+        <input type="radio" name="alasan_join" value="Mau dapet diskon & info kece duluan"> Mau dapet diskon & info kece duluan<br>
+        <input type="radio" name="alasan_join" value="Suka ikut event yang vibes-nya dapet"> Suka ikut event yang vibes-nya dapet<br>
+        <input type="radio" name="alasan_join" value="Nyari circle yang satu frekuensi"> Nyari circle yang satu frekuensi<br>
+        <input type="radio" name="alasan_join" value="Fashion tuh passion"> Fashion tuh passion<br>
+        <input type="radio" name="alasan_join" value="Iseng doang, tapi kok nagih"> Iseng doang, tapi kok nagih<br>
+      </div>
+
+      <label>12. Event impian lo tuh yang vibes-nya kayak...</label>
+      <div>
+        <input type="radio" name="event_impian" value="Chill santai ala piknik"> Chill santai ala piknik<br>
+        <input type="radio" name="event_impian" value="Hype banget, rame, penuh musik"> Hype banget, rame, penuh musik<br>
+        <input type="radio" name="event_impian" value="Fashion show tapi sambil ngemil"> Fashion show tapi sambil ngemil<br>
+        <input type="radio" name="event_impian" value="Workshop bareng orang keren"> Workshop bareng orang keren<br>
+        <input type="radio" name="event_impian" value="Healing tipis-tipis sambil OOTD-an"> Healing tipis-tipis sambil OOTD-an<br>
+        <input type="radio" name="event_impian" value="Lainnya (spill dong idenya)"> Lainnya (spill dong idenya)<br>
+      </div>
+
+      <label>13. Kalau kamu bisa bikin event impian, bakal kayak gimana?</label>
+      <textarea name="ide_event" rows="4"></textarea>
+
+      <button type="submit">Kirim 🚀</button>
+    </form>
+
+    <p class="outro">Udah kelar? Goks, kamu emang niat! 🙌<br>
+    Sekarang tinggal tunggu hal-hal seru dari kita: mulai dari promo, event, sampe kesempatan jadi trendsetter bareng.<br>
+    Kita seneng banget kamu join — let’s grow & glow bareng yaaa ✨</p>
+  </div>
+
+  <script>
+    const scriptURL = "https://script.google.com/macros/s/AKfycbyhmG7EZjaA99L3LPg6m8ujNWnKUoVq0In4-foBcoLcEkLRVz-Z-9EUxPgzqR2F5XD-MA/exec";
+    const form = document.getElementById('kuisionerForm');
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(() => alert("Jawaban kamu sudah terkirim! 💖"))
+        .catch(err => alert("Ups, error: " + err.message));
+    });
+  </script>
+</body>
+</html>
+";
+    const form = document.getElementById('kuisionerForm');
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(() => alert("Jawaban kamu sudah terkirim! 💖"))
+        .catch(err => alert("Ups, error: " + err.message));
+    });
+  </script>
+</body>
+</html>
